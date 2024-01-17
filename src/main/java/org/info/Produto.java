@@ -1,5 +1,5 @@
 package org.info;
-import javax.persistence.*;
+import jakarta.persistence.*;
 
 @Entity
 @Table(name = "Produto")
