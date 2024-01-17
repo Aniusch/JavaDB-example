@@ -1,10 +1,11 @@
 package org.info;
 
 import javax.persistence.*;
+import java.util.Date;
 
 @Entity
-@Table(name = "Cliente")
-public class Cliente {
+@Table(name = "Funcionario")
+public class Funcionario {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
@@ -13,8 +14,9 @@ public class Cliente {
     @Column(nullable = false)
     private String nome;
 
-    private String endereco;
+    private String cargo;
 
-    private String telefone;
+    @Temporal(TemporalType.DATE)
+    private Date dataContratacao;
 
 }

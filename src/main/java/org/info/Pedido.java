@@ -1,3 +1,4 @@
+package org.info;
 import javax.persistence.*;
 import java.util.Date;
 
@@ -19,5 +20,5 @@ public class Pedido {
     @JoinColumn(name = "cliente_id")
     private Cliente cliente;
 
-    // Getters and setters
+
 }
