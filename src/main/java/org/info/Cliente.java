@@ -1,7 +1,7 @@
 package org.info;
 
 
-import jakarta.persistence.GenerationType;
+import jakarta.persistence.*;
 
 @Entity
 @Table(name = "Cliente")
