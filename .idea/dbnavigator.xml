@@ -77,9 +77,7 @@ CREATE TABLE IF NOT EXISTS PedidoFuncionario (
     <last-used-providers />
   </component>
   <component name="DBNavigator.Project.DatabaseFileManager">
-    <open-files>
-      <object connection-id="6ca6f30b-c45c-477f-82dc-490f909c55db" object-ref="consoles/schema" />
-    </open-files>
+    <open-files />
   </component>
   <component name="DBNavigator.Project.DatabaseSessionManager">
     <connection id="6ca6f30b-c45c-477f-82dc-490f909c55db" />
