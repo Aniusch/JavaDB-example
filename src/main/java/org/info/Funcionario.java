@@ -1,7 +1,6 @@
 package org.info;
 
-import jakarta.persistence.*;
-
+import javax.persistence.*;
 import java.util.Date;
 
 @Entity
@@ -20,4 +19,5 @@ public class Funcionario {
     @Temporal(TemporalType.DATE)
     private Date dataContratacao;
 
+    // Getters and setters
 }

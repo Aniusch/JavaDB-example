@@ -70,7 +70,42 @@ CREATE TABLE IF NOT EXISTS PedidoFuncionario (
     PRIMARY KEY (pedido_id, funcionario_id),
     FOREIGN KEY (pedido_id) REFERENCES Pedido(id),
     FOREIGN KEY (funcionario_id) REFERENCES Funcionario(id)
-);]]></console>
+);
+INSERT INTO Cliente (id, nome, endereco, telefone) VALUES
+(1, 'Cliente 1', 'Rua A, 123', '123-4567'),
+(2, 'Cliente 2', 'Rua B, 456', '987-6543');
+
+INSERT INTO Produto (id, nome, preco) VALUES
+(1, 'Produto A', 19.99),
+(2, 'Produto B', 29.99),
+(3, 'Produto C', 9.99);
+
+INSERT INTO Categoria (id, nome) VALUES
+(1, 'Eletrônicos'),
+(2, 'Roupas'),
+(3, 'Alimentos');
+
+INSERT INTO ProdutoCategoria (produto_id, categoria_id) VALUES
+(1, 1),
+(2, 2),
+(3, 3);
+
+INSERT INTO Funcionario (id, nome, cargo, data_contratacao) VALUES
+(1, 'Funcionario 1', 'Vendedor', '2022-01-01'),
+(2, 'Funcionario 2', 'Atendente', '2022-02-01');
+
+INSERT INTO Pedido (id, numero_pedido, data_pedido, cliente_id) VALUES
+(1, 'PED123', '2023-01-15', 1),
+(2, 'PED456', '2023-02-20', 2);
+
+INSERT INTO ItemPedido (id, quantidade, preco_unitario, pedido_id, produto_id) VALUES
+(1, 2, 19.99, 1, 1),
+(2, 1, 29.99, 1, 2),
+(3, 3, 9.99, 2, 3);
+
+INSERT INTO PedidoFuncionario (pedido_id, funcionario_id) VALUES
+(1, 1),
+(2, 2);]]></console>
     </connection>
   </component>
   <component name="DBNavigator.Project.DatabaseEditorStateManager">
@@ -81,6 +116,10 @@ CREATE TABLE IF NOT EXISTS PedidoFuncionario (
   </component>
   <component name="DBNavigator.Project.DatabaseSessionManager">
     <connection id="6ca6f30b-c45c-477f-82dc-490f909c55db" />
+  </component>
+  <component name="DBNavigator.Project.DatasetFilterManager">
+    <filter-actions connection-id="6ca6f30b-c45c-477f-82dc-490f909c55db" dataset="atv.cliente" active-filter-id="EMPTY_FILTER" />
+    <filter-actions connection-id="6ca6f30b-c45c-477f-82dc-490f909c55db" dataset="atv.categoria" active-filter-id="EMPTY_FILTER" />
   </component>
   <component name="DBNavigator.Project.ExecutionManager">
     <retain-sticky-names value="false" />

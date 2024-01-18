@@ -1,7 +1,7 @@
 package org.info;
 
 
-import jakarta.persistence.*;
+import javax.persistence.*;
 
 @Entity
 @Table(name = "Categoria")
